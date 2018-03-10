@@ -1,0 +1,35 @@
+User Installation/Operation Manual
+
+First you must ensure you have NetBeans and MySQL workbench installed which you can get here:
+https://netbeans.org/downloads/
+https://dev.mysql.com/downloads/installer/
+
+Select your OS platform and install the current versions for your system.
+
+Next follow these steps to install the new Store database and the JSPWebApp
+
+⦁	Download NWIT351IP.sql file and JSPWebApp Folder
+⦁	Open the MySQL Workbench and create a new localhost server using port 3306
+⦁	Connect to new server using your root login
+⦁	Under Navigator > Management select ‘User and Privileges’
+⦁	At the bottom left select ‘Add Account’
+⦁	Set Login Name: ctuonline, Set Limit to hosts matching: ‘localhost’, and Password: student
+⦁	Select ‘Apply’
+⦁	Under Navigator > Management select ‘Data Import/Restore’
+⦁	Select radio button ‘Import from Self-Contained File
+⦁	Set path to C:\Users\CorruptFile\Downloads\ NWIT351IP.sql
+⦁	Leave Default Target Schema blank and select ‘New…’
+⦁	Under Schemas you now have the Store Database which contains the product and customer tables
+⦁	Unzip JSPWebApp.zip and save the folder in to your C:\Users\User\Documents\NetBeansProjects
+⦁	Run NetBeans 
+⦁	Open up the Services tab and right click and select ‘New Connection’
+⦁	Under Driver select ‘MySQL(Connector/J driver)’ and select ‘Next’
+⦁	Set Host to ‘localhost’, Set Port to ‘3306’, Set Database to ‘store’, Set User Name to ‘ctuonline’, Set Password to ‘student’, and select ‘Next’
+⦁	Select ‘Finish’
+⦁	Under Services tab > Databases right click the new database connection and select connect
+⦁	You will now see store
+⦁	Go to the Projects tab and right click the JSPWebApp and select ‘Run’
+⦁	After a few seconds the connection will be established a web page will pop up
+⦁	Navigate through the web application using the displayed buttons
+⦁	Close the web page window to exit the program
+Completed you now have access to the new Web Application that communicates and displays the MySQL store database!
